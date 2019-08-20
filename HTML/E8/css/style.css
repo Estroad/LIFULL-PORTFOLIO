@@ -1,0 +1,94 @@
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { font-family:poiret one; width:100%;   height:2360px; } 
+
+
+/*header*/
+.top_bar { width:100%; height:30px; top:0px; left:0px; background:#f0eded; position:fixed; }
+
+
+/*sideber*/
+.sidebar { height : 100% ; position: fixed; right:-70px; z-index:-1;}
+
+/*logo*/
+h1 { position:fixed; width:412px; height:160px; top:45px; left:40px;  z-index:5;}
+#navi { position:fixed; top:170px; left:40px; z-index:999;}
+#navi li { float:left; width:25px; height:42px;}
+
+
+#videobcg { 
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+}
+
+
+#navi li.on { opacity:0.5; }
+
+/*.main_img { position:fixed;  background-image:url("http://hadaboni.net/eunho/css/../img/main-image.jpg"); background-repeat:no-repeat; background-position:800px top; background-size:cover; width:100%; height:100%; top:0px; right:0px;  z-index:-1;}
+*/
+/*리스???�이?�웃*/
+section {  position:fixed; width:2160px; height:220px; top:50%; margin-top:-170px; left:40px; }
+article { position:relative; width:230px; height:220px; margin:10px; float:left; background:#fff;  border-radius:2px;   box-shadow:1px 1px 1px #ccc; overflow:hidden; transition:all 0.7s; }
+
+/*리스??칼라?�버*/
+article h2 { position:absolute; opacity:1; z-index:2; cursor:pointer; transition:all 0.5s; }
+article:hover h2 { opacity:0.4;}
+article h2 a {  position:absolute; top:165px; left:1px; }
+
+/*리스???�네??/
+article strong { display:block; position:absolute; left:0px; top:0px;  width:100%; height:220px; opacity:1; overflow:hidden; transition:all 0.5s; }
+article:hover strong { opacity:0.5; }
+article strong img {height:220px; width:auto;}
+
+/*리스???��?지*/
+article p { position:absolute; top:50%; right:0%; z-index:1; margin-top:0px; width:100%; height:0px; text-align:center; overflow:hidden; background-color:#fff; opacity:0; transition:all 0.5s; }
+article p img { width:auto; height:100%; }
+
+/*리스???�명*/
+article em { position:absolute; top:163px; right:-500px; z-index:2; display:inline-block;  transition:all 1.45s; }
+
+/*?�기버튼*/
+section span { position:absolute; top:100px; left:-100px; z-index:3;  transform:scale(1); color:tomato; cursor:pointer; transition:all 0.5s; font-size:30px; }
+section:hover span { transform:rotate(360deg);}
+
+
+.cocaimg { position:fixed; width:304px; height:304px; bottom:0px; left:0px; z-index:1; }
+
+/*sns*/
+#sns  { z-index:1; position:fixed; top:3px; left:50%;}
+#sns li  { float:left; }
+
+/*bottom*/
+.bottom_bar { position:fixed; bottom : 0px; right:0px;}
+
+
+/*?�릭??변?�된 모습*/
+article.on { width:410px; height:361px; margin-top:0px; }
+article.on h2 { top:0px; height:100px;  opacity:0; ;}
+article.on strong { opacity:0;}
+article.on p { height:361px; margin-top:-180px; opacity:1;}
+article.on em { top:152px;  right:8px;   }
+article.on span { left:10px; top:5px; }
+
+
+/*sns ani*/
+#sns li:nth-child(2):hover { animation:ani 1s linear infinite;}
+#sns li:nth-child(4):hover { animation:ani 1s linear infinite;}
+#sns li:nth-child(5):hover { animation:ani 1s linear infinite;}
+#sns li:nth-child(6):hover { animation:ani 1s linear infinite;}
+
+
+@keyframes ani{
+ 0%{  opacity:1; transform:scale(0.5); }
+  100%{ opacity:0; transform:scale(1) rotate(20deg); }
+}
